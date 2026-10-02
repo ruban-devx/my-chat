@@ -1,0 +1,143 @@
+/*
+  Minimal default styling for the <Chat /> shell. All class names are prefixed "mychat-" to
+  avoid collisions with a host app's own CSS. Import this once, e.g.:
+    import "my-chat-react/style.css";
+*/
+
+.mychat-shell {
+  display: flex;
+  height: 100%;
+  min-height: 400px;
+  border: 1px solid #d9d9e3;
+  border-radius: 8px;
+  overflow: hidden;
+  font-family:
+    system-ui,
+    -apple-system,
+    sans-serif;
+}
+
+.mychat-sidebar {
+  width: 240px;
+  flex-shrink: 0;
+  overflow-y: auto;
+  border-right: 1px solid #d9d9e3;
+  background: #f7f7fa;
+}
+
+.mychat-conversation-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.mychat-conversation-item {
+  text-align: left;
+  padding: 12px 16px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 14px;
+  border-bottom: 1px solid #ececf1;
+}
+
+.mychat-conversation-item:hover {
+  background: #ececf1;
+}
+
+.mychat-conversation-item-selected {
+  background: #e4e6ff;
+  font-weight: 600;
+}
+
+.mychat-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.mychat-empty-state,
+.mychat-loading {
+  margin: auto;
+  color: #8a8a94;
+  font-size: 14px;
+}
+
+.mychat-message-list {
+  flex: 1;
+  overflow-y: auto;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mychat-message {
+  max-width: 70%;
+  padding: 8px 12px;
+  border-radius: 12px;
+  background: #f0f0f4;
+  align-self: flex-start;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.mychat-message-own {
+  align-self: flex-end;
+  background: #4f5bff;
+  color: #fff;
+}
+
+.mychat-message-sender {
+  font-size: 12px;
+  font-weight: 600;
+  opacity: 0.7;
+  margin-bottom: 2px;
+}
+
+.mychat-message-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.mychat-message-action {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 11px;
+  text-decoration: underline;
+  cursor: pointer;
+  color: inherit;
+  opacity: 0.75;
+}
+
+.mychat-composer {
+  display: flex;
+  gap: 8px;
+  padding: 12px;
+  border-top: 1px solid #d9d9e3;
+}
+
+.mychat-composer-input {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #d9d9e3;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.mychat-composer-send {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  background: #4f5bff;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.mychat-composer-send:disabled {
+  opacity: 0.5;
+  cursor: default;
+}

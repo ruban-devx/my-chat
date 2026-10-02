@@ -1,0 +1,2 @@
+com.project.mychat.MyChatAutoConfiguration
+com.project.mychat.realtime.MyChatWebSocketAutoConfiguration

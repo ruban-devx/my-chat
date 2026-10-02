@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  font-family:
+    system-ui,
+    -apple-system,
+    sans-serif;
+  background: #fafafc;
+}
+
+.centered {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 24px;
+}
+
+.login-screen p {
+  max-width: 480px;
+  color: #555;
+}
+
+.login-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.login-buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  background: #4f5bff;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.app-shell {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 20px;
+  border-bottom: 1px solid #d9d9e3;
+  background: #fff;
+}
+
+.app-header button {
+  padding: 6px 12px;
+  border: 1px solid #d9d9e3;
+  border-radius: 6px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.app-main {
+  flex: 1;
+  padding: 20px;
+  min-height: 0;
+}

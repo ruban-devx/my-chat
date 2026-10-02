@@ -1,0 +1,15 @@
+server:
+  port: 8090
+
+spring:
+  application:
+    name: sample-product
+  datasource:
+    url: jdbc:postgresql://localhost:55440/sample_product
+    username: sample
+    password: sample
+  jpa:
+    open-in-view: false
+
+my-chat:
+  enabled: true

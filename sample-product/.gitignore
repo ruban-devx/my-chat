@@ -1,0 +1,6 @@
+target/
+node_modules/
+src/main/resources/static/
+frontend/dist/
+*.local
+.DS_Store
